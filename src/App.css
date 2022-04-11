@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+@font-face {
+font-family: "Copperplate Gothic Light";
+src: local("Copperplae-Gothic-Light-Regular"),
+    url("./fonts/Copperplate-Gothic-Light-Regular.ttf") format("truetype");
+    font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* Make h1 center on top 10 vh */
+.header {
+    font-size: 5rem;
+    text-align: center;
+    font-family: "Copperplate Gothic Light", monospace;
+    font-weight: 1000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/*Make container that fills whole screen and center child items, but with top-container on top and bottom-container on bottom*/
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("blankTable.png") no-repeat center center fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+
+/* Make button container 20 rem wide and make child buttons equally big with 1rem space in between, and make container stay close to bottom*/
+.button-container {
+    width: 25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+
+button {
+    background-color: #FBC02D;
+    color: black;
+    border: 1px solid black;
+    width: 100vh;
+    border-radius: 5px;
+    padding: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin: .5rem;
+    cursor: pointer;
+    font-family: "Rockwell", serif;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+button:hover {
+    background-color: #F9A825;
 }
+
+button:active {
+    background-color: #F57F17;
+}
+
+
+.label {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Rockwell", serif;
+}
+
+
+
+.row-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vh;
+}
+
+.row-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vh;
+    height: 30vh;
+}
+
+/*make row for label that spans 15 vh of screen*/
+.row-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vh;
+    height: 5vh;
+}
+
+
+

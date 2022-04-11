@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "./fonts/Copperplate-Gothic-Light-Regular.ttf";
 
 ReactDOM.render(
   <React.StrictMode>
