@@ -1,7 +1,7 @@
 @font-face {
 font-family: "Copperplate Gothic Light";
 src: local("Copperplae-Gothic-Light-Regular"),
-    url("./fonts/Copperplate-Gothic-Light-Regular.ttf") format("truetype");
+url("./Copperplate-Gothic-Light-Regular.ttf") format("truetype");
     font-weight: bold;
 }
 
@@ -23,7 +23,7 @@ src: local("Copperplae-Gothic-Light-Regular"),
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url("blankTable.png") no-repeat center center fixed;
+    background: url("./blankTable.png") no-repeat center center fixed;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
