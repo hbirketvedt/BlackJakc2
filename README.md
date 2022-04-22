@@ -1,6 +1,6 @@
 ## BlackJack made with React.js
 
-#### Need node.js installed to run
+#### Needs node.js installed to run
 
 #### Run
 <pre><code>npm install</code></pre>
